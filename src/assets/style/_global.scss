@@ -1,0 +1,31 @@
+$BaseFont : Nunito;
+$DarkColor:#121212;
+$SecondaryTextColor:#030b4d;
+
+
+@mixin GradientText {
+  background-color: #ff5f6d;
+  background-image: linear-gradient(20deg, #ff5f6d, #ffc371);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  font-family: $BaseFont;
+  } 
+
+  @mixin GradientTextSecondary {
+    background-color: $SecondaryTextColor;
+    background-image: linear-gradient(75deg,#030b4d , #004e92);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-family: $BaseFont;
+    } 
+  
+
+@mixin Gradient {
+  background-image: linear-gradient(20deg, #ff5f6d, #ffc371);
+}

@@ -1,0 +1,160 @@
+/* Style discussion box*/
+
+.Discussion {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(100% - 75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  transition: display 1s ease;
+}
+
+.Discussion header {
+  display: flex;
+  position: relative;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  h1 {
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: $BaseFont;
+    margin: 0;
+  }
+}
+.Discussion header .Hide-Box_Discussion {
+  position: absolute;
+  right: 15px;
+  background-color: transparent;
+}
+
+.Discussion-Container {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.Discussion-Content div:first-child .User_Profil {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-left: -12px;
+}
+.Discussion-Content div:first-child .User_Profil img {
+  position: absolute;
+  width: 24px;
+  height: auto;
+}
+.Discussion-Content div:last-child {
+  small {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  p {
+    font-size: 0.85em;
+    background-color: #e0e0e0;
+    border-radius: 0px 10px 10px 10px;
+    max-width: max-content;
+  }
+}
+
+.Discussion-Content.is_me div:last-child p {
+  background-color: rgb(228, 240, 251);
+}
+
+.Discussion-Content div:last-child .File-Box_Download {
+  height: 95px;
+  width: 75px;
+  background-color: #121212;
+  border-radius: 5px;
+}
+.Discussion-Content div:last-child a {
+  font-size: 0.74em;
+  text-align: center;
+  color: #424242;
+}
+
+/* discussion sender*/
+.Send-File_visualisation {
+  position: absolute;
+  height: 75px;
+  width: 100%;
+  z-index: 11;
+  background-color: #e0e0e0;
+  bottom: 50px;
+  display: none;
+}
+.Send-File_visualisation .File {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Send-File_visualisation .File .File_illustration {
+  position: relative;
+  height: calc(100% - 20px);
+  width: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.Send-File_visualisation .File .File_illustration button {
+  position: absolute;
+  height: 16px !important;
+  width: 16px !important;
+  background-color: #000;
+  border-radius: 100%;
+  right: -6px;
+  top: -4px;
+  outline: none;
+  cursor: pointer;
+}
+.Send-File_visualisation .File p {
+  font-size: 14px;
+  opacity: 0.5;
+  margin: 0;
+  max-width: 45px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.Discussion footer {
+  background-color: #000;
+  padding: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input {
+    border: none;
+    background-color: #424242;
+    border-radius: 10px;
+    height: 38px;
+    width: 45%;
+    outline: none;
+    padding-left: 10px;
+    color: #e0e0e0;
+    transition: width 0.4s ease;
+    &:focus {
+      width: 75%;
+    }
+  }
+  .Select-file {
+    label {
+      margin-bottom: 0;
+      i{
+        color:#fff
+      }
+    }
+  }
+}

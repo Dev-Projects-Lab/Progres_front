@@ -1,0 +1,50 @@
+.Home_SectionPresentaionPlatform {
+  position: relative;
+ 
+  .Home_Presentaion-Text {
+    h1 {
+      @include GradientText;
+      font-size: 5em;
+      font-weight: 600;
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 1.2em;
+      font-weight: 500;
+      width: 75%;
+    }
+  }
+  .Home_ButtonJoinDiffusion {
+    color: white;
+    @include Gradient;
+    transition: background-color 0.4s ease-in;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    i{
+      font-size: 1em;
+    }
+    &:hover {
+      background-image: none;
+      background-color: $DarkColor;
+    }
+  }
+  .Home_ButtonCreateDiffusion {
+    background: none !important;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: $DarkColor;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.Home_Presentaion-Ullustration {
+  .Home_CircleBackground {
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+    border: 1px solid red;
+  }
+}

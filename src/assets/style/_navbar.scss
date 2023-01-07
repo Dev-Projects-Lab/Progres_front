@@ -1,0 +1,22 @@
+.Navbar_ {
+    .NavBar_Logo{
+        color: $DarkColor;
+    }
+    .NavBar_ButtonLogin {
+      button{
+        font-family: $BaseFont;
+        font-weight: 700;
+        @include GradientText;
+        border: 2px solid #ff9966;
+        border-radius: 5px;
+        
+    }
+      /*
+      button:last-child {
+        background: none;
+        font-family: $BaseFont;
+        font-weight: 700;
+      }
+     */
+    }
+  }
