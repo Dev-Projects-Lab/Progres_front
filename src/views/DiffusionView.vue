@@ -2,11 +2,10 @@
     <div class="Diffusion-Container row m-0">
         <div class="col-lg-6">
          </div>
-         <div>
-            <BoxDiscussion isShowDiscussion="true"></BoxDiscussion>
-         </div>
+       
+            <BoxDiscussion ></BoxDiscussion>
+         
     </div>
-    <button class="btn btn-primary position-absolute">hide</button>
 </template>
 
 <script>

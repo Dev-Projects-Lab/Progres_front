@@ -1,0 +1,23 @@
+.CreationJoinServer_{
+    
+    .CreationJoinServer_JoinServer{
+
+        input{
+            max-width: 350px;
+        }
+        label{
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        button{
+            @include Gradient;
+            color:#fff;
+            border: none;
+            outline: none;
+            font-weight: bold;
+        }
+    }
+    .ServerTest{
+        border: 1px solid red;
+    }
+}

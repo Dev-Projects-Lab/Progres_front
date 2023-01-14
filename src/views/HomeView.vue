@@ -1,5 +1,6 @@
 <template >
     <NavBarVue></NavBarVue>
+  
     <!--Presentation section-->
     <section class="row m-0 container-fluid px-5 mt-5 Home_SectionPresentaionPlatform">
         <div class="col-12 col-md-6 Home_Presentaion-Text mt-4">
@@ -24,6 +25,7 @@
     </section>
     <!--Share file -->
     <HomeShareFileVue></HomeShareFileVue>
+
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
     <div class="Discussion col-lg-4 p-0 ml-auto " v-if="isShowDiscussion">
-        <header class="">
+        <header>
             <div class="text-center">
                 <h1>Discussion</h1>
             </div>
@@ -50,17 +50,23 @@
             <button class="btn Sender-message"></button>
         </footer>
     </div>
+    <button class="Show-Box_Discussion" v-if="!isShowDiscussion" @click="showDiscussion"><img src="@/assets/icon/Speech.png" alt="" srcset=""></button>
 </template>
 
 <script>
 export default {
     name: 'BoxDiscussion',
-      props: {
-        isShowDiscussion: Boolean,
+    data(){
+        return{
+            isShowDiscussion:true
+        }
     },
     methods: {
         hideDiscussion() {
             this.isShowDiscussion = false
+        },
+        showDiscussion() {
+            this.isShowDiscussion = true
         }
     }
 

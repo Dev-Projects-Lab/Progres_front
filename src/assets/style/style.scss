@@ -4,7 +4,9 @@
 @import '_home';
 @import 'navbar';
 @import '_homesharefile';
+@import 'creationjoinserver';
 @import 'diffusion';
 *{
     box-sizing: border-box;
+    font-family: $BaseFont;
 }

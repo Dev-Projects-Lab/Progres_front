@@ -2,21 +2,18 @@
     .NavBar_Logo{
         color: $DarkColor;
     }
-    .NavBar_ButtonLogin {
-      button{
-        font-family: $BaseFont;
-        font-weight: 700;
-        @include GradientText;
-        border: 2px solid #ff9966;
-        border-radius: 5px;
-        
-    }
-      /*
-      button:last-child {
-        background: none;
-        font-family: $BaseFont;
-        font-weight: 700;
+    .Navbar_UserProfil{
+      position: relative;
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+      overflow: hidden;
+      object-fit: contain;
+      border: none;
+      img{
+        position: absolute;
+        width: 35px;
+        height: auto;
       }
-     */
     }
   }

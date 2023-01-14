@@ -158,3 +158,22 @@
     }
   }
 }
+
+/*Show message controle*/
+
+.Show-Box_Discussion{
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 100%;
+  border:none;
+  outline: none;
+  background: #000;
+  cursor: pointer;
+  img{
+    width: 35px;
+  }
+
+}
