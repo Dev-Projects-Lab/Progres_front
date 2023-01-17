@@ -6,6 +6,7 @@
             <div class="Navbar_UserProfil">
             <img src="@/assets/img/Malala.jpg" alt="">
            </div>
+           <p></p>
         </div>
     </header>
 </template>
@@ -15,7 +16,12 @@
 import { decodeCredential } from 'vue3-google-login'
 export default {
     name: 'NavBar',
+    data(){
+        return{
+        }
+     },
     setup() {
+        
         const callback = (response) => {
         const userData = decodeCredential(response.credential)
         console.log("Handle the response", userData)
@@ -24,7 +30,11 @@ export default {
             callback
         }
     },
+    
     methods: {
+        handleUser(){
+             console.log(this.$store.state.user);
+        }
     }
 }
 </script>
